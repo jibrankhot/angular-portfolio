@@ -7,11 +7,18 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
 
 
 @NgModule({
-  declarations: [NavbarComponent, ScrollTopComponent],
+  declarations: [
+    NavbarComponent,
+    ScrollTopComponent
+  ],
   imports: [
     CommonModule,
     NgxTypedJsModule
   ],
-  exports: [NavbarComponent, NgxTypedJsModule, ScrollTopComponent]
+  exports: [
+    NavbarComponent,
+    NgxTypedJsModule,
+    ScrollTopComponent
+  ]
 })
 export class SharedModule { }
