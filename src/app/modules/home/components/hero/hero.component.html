@@ -1,0 +1,28 @@
+<!-- can try as well if i want data-aos="zoom-in"
+data-aos="flip-left"
+data-aos="slide-up"  -->
+
+
+<section class="hero" data-aos="fade-up">
+    <div class="container">
+        <div class="left" data-aos="fade-right">
+            <img src="assets/images/profile.png" alt="Jibran Khot" />
+        </div>
+        <div class="right" data-aos="fade-left">
+            <h1>Hi, I'm <span class="name">Jibran Khot</span></h1>
+            <h2>
+                <ngx-typed-js [strings]="typedStrings" [typeSpeed]="50" [backSpeed]="30" [loop]="true"
+                    [backDelay]="1500">
+                    <span class="typing"></span>
+                </ngx-typed-js>
+            </h2>
+            <p>I build high-performance Angular applications using modern architecture and RxJS.</p>
+
+            <div class="cta" data-aos="zoom-in-up">
+                <a routerLink="/projects" class="btn">View Projects</a>
+                <a routerLink="/contact" class="btn-outline">Contact Me</a>
+                <a href="assets/resume-jibran.pdf" class="btn-outline" download>Download Resume</a>
+            </div>
+        </div>
+    </div>
+</section>

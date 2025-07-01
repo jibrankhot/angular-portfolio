@@ -20,6 +20,7 @@
             "outputPath": "dist/angular-portfolio",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "baseHref": "/angular-portfolio/",
             "polyfills": [
               "zone.js"
             ],
@@ -30,7 +31,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              "src/styles.scss",
+               "node_modules/aos/dist/aos.css"
             ],
             "scripts": []
           },
