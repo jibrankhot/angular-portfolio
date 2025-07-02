@@ -1,0 +1,69 @@
+.navbar {
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 1.6rem;
+    color: #3f51b5;
+    text-decoration: none;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    font-size: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+
+    @media (max-width: 768px) {
+      display: block;
+    }
+  }
+
+  .nav-links {
+    display: flex;
+    gap: 2rem;
+    list-style: none;
+
+    li a {
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+      cursor: pointer;
+
+      &:hover {
+        color: #3f51b5;
+      }
+    }
+
+    @media (max-width: 768px) {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      right: 0;
+      flex-direction: column;
+      background: white;
+      text-align: center;
+      padding: 1rem;
+      display: none;
+
+      &.open {
+        display: flex;
+      }
+    }
+  }
+}

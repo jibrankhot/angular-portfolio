@@ -1,0 +1,11 @@
+<section class="projects-section container" id="projects">
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out">
+        Projects
+    </h2>
+
+    <div class="projects-grid">
+        <app-project-card *ngFor="let project of projects; let i = index" [project]="project" [aosDelay]="i * 300"
+            data-aos="fade-up" [attr.data-aos-delay]="i * 300" data-aos-duration="1200"
+            data-aos-easing="ease-in-out"></app-project-card>
+    </div>
+</section>
