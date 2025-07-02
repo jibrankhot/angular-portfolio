@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
 import { Router, NavigationEnd } from '@angular/router';
-import { ViewportScroller } from '@angular/common';
 // @ts-ignore
 import * as AOS from 'aos';
 
@@ -10,28 +9,25 @@ import * as AOS from 'aos';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent implements OnInit {
-  constructor(private router: Router, private viewportScroller: ViewportScroller) { }
+  constructor(private router: Router) { }
 
   ngOnInit(): void {
     AOS.init({
       duration: 1200,
       easing: 'ease-in-out',
-      once: true, // Animate only once
+      once: true
     });
 
     this.router.events.subscribe((event) => {
       if (event instanceof NavigationEnd) {
-        // Scroll to top on route change
-        this.viewportScroller.scrollToPosition([0, 0]);
-
-        // Refresh AOS to re-trigger animations correctly
+        window.scrollTo({ top: 0, behavior: 'instant' });
         setTimeout(() => AOS.refresh(), 100);
       }
     });
   }
 
   ngAfterViewInit(): void {
-    // Safety net refresh
+    // Additional AOS refresh for safety
     setTimeout(() => AOS.refresh(), 500);
   }
 }
