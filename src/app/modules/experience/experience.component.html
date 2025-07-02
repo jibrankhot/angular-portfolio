@@ -1,8 +1,11 @@
 <section class="experience-section" id="experience">
-    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+    <h2 class="section-title" data-aos="fade-up" data-aos-duration="1200" data-aos-easing="ease-in-out">
+        Experience
+    </h2>
 
     <div class="experience-list">
-        <app-experience-card *ngFor="let exp of experiences; let i = index" [experience]="exp" [aosDelay]="i * 100"
-            data-aos="fade-up" [attr.data-aos-delay]="i * 100"></app-experience-card>
+        <app-experience-card *ngFor="let exp of experiences; let i = index" [experience]="exp" [aosDelay]="i * 300"
+            data-aos="fade-up" [attr.data-aos-delay]="i * 300" data-aos-duration="1200"
+            data-aos-easing="ease-in-out"></app-experience-card>
     </div>
 </section>
