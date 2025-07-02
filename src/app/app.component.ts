@@ -16,4 +16,8 @@ export class AppComponent implements OnInit {
       once: true, // only animate once
     });
   }
+  ngAfterViewInit(): void {
+    setTimeout(() => AOS.refresh(), 500); // Ensures DOM is fully rendered before AOS fires
+  }
+
 }
