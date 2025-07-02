@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 import { NavbarComponent } from './navbar/navbar.component';
 import { NgxTypedJsModule } from 'ngx-typed-js';
 import { ScrollTopComponent } from './components/scroll-top/scroll-top.component';
+import { RouterModule } from '@angular/router';
 
 
 
@@ -13,7 +14,8 @@ import { ScrollTopComponent } from './components/scroll-top/scroll-top.component
   ],
   imports: [
     CommonModule,
-    NgxTypedJsModule
+    NgxTypedJsModule,
+    RouterModule
   ],
   exports: [
     NavbarComponent,
