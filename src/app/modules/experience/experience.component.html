@@ -1,1 +1,8 @@
-<p>experience works!</p>
+<section class="experience-section" id="experience">
+    <h2 class="section-title" data-aos="fade-up">Experience</h2>
+
+    <div class="experience-list">
+        <app-experience-card *ngFor="let exp of experiences; let i = index" [experience]="exp" [aosDelay]="i * 100"
+            data-aos="fade-up" [attr.data-aos-delay]="i * 100"></app-experience-card>
+    </div>
+</section>
