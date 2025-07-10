@@ -28,13 +28,8 @@
         cursor: pointer;
         border-radius: 4px;
 
-        &.prev {
-          left: 0.5rem;
-        }
-
-        &.next {
-          right: 0.5rem;
-        }
+        &.prev { left: 0.5rem; }
+        &.next { right: 0.5rem; }
       }
     }
 
@@ -81,15 +76,8 @@
     flex: 1 1 48%;
     min-width: 250px;
 
-    h3 {
-      font-size: 1.3rem;
-      margin-bottom: 0.5rem;
-    }
-
-    p {
-      font-size: 0.95rem;
-      margin-bottom: 0.8rem;
-    }
+    h3 { font-size: 1.3rem; margin-bottom: 0.5rem; }
+    p { font-size: 0.95rem; margin-bottom: 0.8rem; }
 
     .tech-stack {
       margin-bottom: 0.8rem;
@@ -128,25 +116,33 @@
   @media (max-width: 768px) {
     flex-direction: column;
 
-    &.reverse-layout {
-      flex-direction: column;
-    }
+    &.reverse-layout { flex-direction: column; }
 
-    .project-image,
-    .project-details {
+    .project-image, .project-details {
       max-width: 100%;
     }
   }
 }
 
-// ✅ Fullscreen dialog fix
+.fullscreen-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  background-color: #000;
+  transition: transform 0.3s ease;
+  cursor: zoom-in;
+
+  &.zoomed {
+    transform: scale(2);
+    cursor: zoom-out;
+  }
+}
+
 ::ng-deep .p-dialog {
   position: fixed !important;
   inset: 0 !important;
   margin: 0 !important;
   padding: 0 !important;
-  max-width: 100vw !important;
-  max-height: 100vh !important;
   width: 100vw !important;
   height: 100vh !important;
   background-color: #000 !important;
@@ -165,10 +161,38 @@
   align-items: center !important;
   background-color: #000 !important;
 }
-
-.fullscreen-img {
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-  background-color: #000;
+.fullscreen-nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 100;
+  font-size: 2.5rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.5);
+  border: none;
+  padding: 0.2rem 0.8rem;
+  cursor: pointer;
+  user-select: none;
+  border-radius: 6px;
 }
+
+.fullscreen-nav.prev {
+  left: 1rem;
+}
+
+.fullscreen-nav.next {
+  right: 1rem;
+}
+
+.image-counter {
+  position: absolute;
+  bottom: 1.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 1rem;
+  color: white;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 4px 10px;
+  border-radius: 5px;
+}
+
