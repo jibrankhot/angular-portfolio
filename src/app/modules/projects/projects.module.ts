@@ -5,6 +5,7 @@ import { ProjectsComponent } from './projects.component';
 import { ProjectCardComponent } from './components/project-card/project-card.component';
 import { SharedModule } from 'src/app/shared/shared.module';
 import { ButtonModule } from 'primeng/button';
+import { DialogModule } from 'primeng/dialog';
 
 @NgModule({
   declarations: [
@@ -16,6 +17,7 @@ import { ButtonModule } from 'primeng/button';
     SharedModule,
     CommonModule,
     ButtonModule,
+    DialogModule
   ], schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class ProjectsModule { }
