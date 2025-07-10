@@ -1,0 +1,119 @@
+.about {
+  background-color: #f9f9f9;
+  padding: 4rem 1rem;
+
+  .container {
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5rem;
+    align-items: center;
+
+    .image {
+      flex: 1;
+      text-align: center;
+
+      img {
+        width: 250px;
+        border-radius: 10px;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      }
+    }
+
+    .content {
+      flex: 2;
+
+      h2 {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+        color: #3f51b5;
+      }
+
+      h3 {
+        font-size: 1.2rem;
+        color: #673ab7;
+        margin-bottom: 1.5rem;
+        font-weight: 500;
+      }
+
+      p {
+        font-size: 1.1rem;
+        color: #444;
+        line-height: 1.6;
+        margin-bottom: 2rem;
+      }
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 0.75rem;
+        margin-bottom: 2rem;
+
+        span {
+          background: #3f51b5;
+          color: white;
+          padding: 0.5rem 1rem;
+          border-radius: 20px;
+          font-size: 0.95rem;
+          display: flex;
+          align-items: center;
+          gap: 0.5rem;
+        }
+      }
+
+      .resume-button {
+        margin-top: 1rem;
+
+        a {
+          padding: 0.75rem 1.5rem;
+          border: 2px solid #3f51b5;
+          border-radius: 5px;
+          text-decoration: none;
+          color: #3f51b5;
+          font-weight: 500;
+          transition: 0.3s ease;
+
+          &:hover {
+            background: #3f51b5;
+            color: white;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+
+      .skills {
+        justify-content: center;
+      }
+    }
+  }
+}
+.mobile-summary {
+  display: none;
+  text-align: center;
+  padding: 1rem;
+
+  h2 {
+    font-size: 1.5rem;
+    color: #3f51b5;
+    margin-bottom: 0.25rem;
+  }
+
+  p {
+    font-size: 1rem;
+    color: #666;
+  }
+}
+
+@media (max-width: 768px) {
+  .mobile-summary {
+    display: block;
+  }
+}
+

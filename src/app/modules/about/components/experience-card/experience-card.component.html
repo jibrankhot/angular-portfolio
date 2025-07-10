@@ -1,0 +1,25 @@
+<section class="experience" data-aos="fade-up">
+    <div class="container">
+        <h2 class="section-title">Professional Experience</h2>
+
+        <div class="timeline">
+            <div class="card" *ngFor="let exp of experienceList" data-aos="fade-up">
+                <h3 class="job-title">{{ exp.title }}</h3>
+                <h4 class="company">{{ exp.company }}</h4>
+                <span class="duration">{{ exp.duration }}</span>
+                <p class="description">{{ exp.description }}</p>
+            </div>
+        </div>
+        <div class="education" data-aos="fade-up">
+            <h2 class="section-title">Education</h2>
+            <div class="timeline">
+                <div class="card" *ngFor="let edu of education">
+                    <h3 class="job-title">{{ edu.degree }}</h3>
+                    <h4 class="company">{{ edu.institution }}</h4>
+                    <span class="duration">{{ edu.year }}</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
