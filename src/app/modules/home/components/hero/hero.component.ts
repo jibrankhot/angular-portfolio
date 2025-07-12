@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 export class HeroComponent {
   typedStrings: string[] = [
     'Angular Developer',
-    'UI Engineer',
-    'RxJS Expert',
-    'SCSS / Tailwind Enthusiast'
+    'Frontend Engineer',
+    'RxJS & State Management Enthusiast',
+    'UI/UX Focused Developer'
   ];
 }
