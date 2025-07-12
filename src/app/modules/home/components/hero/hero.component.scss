@@ -18,6 +18,11 @@
         max-width: 280px;
         border-radius: 50%;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+        transition: transform 0.3s ease;
+
+        &:hover {
+          transform: scale(1.05);
+        }
       }
     }
 
@@ -42,6 +47,7 @@
           align-items: center;
           font-size: 1.5rem;
           font-weight: 500;
+          min-width: 280px; // Helps with smooth typing animation
 
           .typing {
             color: #673ab7;
@@ -69,6 +75,7 @@
           font-weight: 500;
           text-decoration: none;
           transition: 0.3s ease;
+          cursor: pointer;
         }
 
         .btn {
