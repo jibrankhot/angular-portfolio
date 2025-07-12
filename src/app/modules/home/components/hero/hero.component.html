@@ -1,29 +1,34 @@
 <section class="hero" data-aos="fade-up">
     <div class="container">
         <div class="left" data-aos="fade-right">
-            <img src="assets/images/profile.png" alt="Jibran Khot" />
+            <img src="assets/images/profile.webp" alt="Jibran Khot" />
         </div>
 
         <div class="right" data-aos="fade-left">
             <h1>Hi, I'm <span class="name">Jibran Khot</span></h1>
 
-            <h2>
-                <ngx-typed-js [strings]="typedStrings" [typeSpeed]="50" [backSpeed]="30" [loop]="true"
-                    [backDelay]="1500">
-                    <span class="typing"></span>
-                </ngx-typed-js>
+            <h2 aria-label="Professional roles">
+                <span class="typed-wrapper">
+                    I am a&nbsp;
+                    <ngx-typed-js [strings]="typedStrings" [typeSpeed]="50" [backSpeed]="30" [loop]="true"
+                        [backDelay]="1500">
+                        <span class="typing"></span>
+                    </ngx-typed-js>
+                </span>
             </h2>
 
             <p>
                 Software Developer with 3 years of experience building enterprise-grade applications.
-                Currently focused on creating modern, scalable web apps using Angular, TypeScript, RxJS, and REST APIs.
-                Background in VB.NET and SQL Server with an eye for clean UI and responsive design.
+                Currently focused on creating modern, scalable Angular web apps using TypeScript, RxJS, and REST APIs.
+                Background in VB.NET and SQL Server with a keen eye for clean architecture and responsive design.
             </p>
 
             <div class="cta" data-aos="zoom-in-up">
-                <a routerLink="/projects" class="btn">View Projects</a>
-                <a routerLink="/contact" class="btn-outline">Contact Me</a>
-                <a href="assets/resume-jibran.pdf" class="btn-outline" download>Download Resume</a>
+                <a routerLink="/projects" class="btn" aria-label="View Projects">View Projects</a>
+                <a href="mailto:jibrankhot5@gmail.com" class="btn-outline" aria-label="Contact Jibran via Email">Contact
+                    Me</a>
+                <a href="assets/resume-jibran.pdf" class="btn-outline" download aria-label="Download Resume">Download
+                    Resume</a>
             </div>
         </div>
     </div>

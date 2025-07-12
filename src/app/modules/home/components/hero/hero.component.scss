@@ -35,16 +35,26 @@
 
       h2 {
         font-weight: 400;
+        margin-top: 0.5rem;
 
-        .typing {
-          color: #673ab7;
+        .typed-wrapper {
+          display: inline-flex;
+          align-items: center;
+          font-size: 1.5rem;
+          font-weight: 500;
+
+          .typing {
+            color: #673ab7;
+            margin-left: 0.25rem;
+          }
         }
       }
 
       p {
-        margin: 1rem 0;
+        margin: 1.2rem 0;
         font-size: 1.1rem;
-        color: #555;
+        color: #333;
+        line-height: 1.6;
       }
 
       .cta {
