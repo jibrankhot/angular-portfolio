@@ -1,27 +1,42 @@
-# AngularPortfolio
+# 🌐 Jibran Khot | Angular Developer Portfolio
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.16.
+![GitHub repo size](https://img.shields.io/github/repo-size/jibrankhot/angular-portfolio)
+![GitHub last commit](https://img.shields.io/github/last-commit/jibrankhot/angular-portfolio)
+![GitHub](https://img.shields.io/github/license/jibrankhot/angular-portfolio)
+[![Live Demo](https://img.shields.io/badge/Live-Demo-blue)](https://jibrankhot.github.io/angular-portfolio/)
+![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Live-green)
+![Built with Angular](https://img.shields.io/badge/Built%20With-Angular-red)
 
-## Development server
+## 📌 Live Demo
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+👉 [jibrankhot.github.io/angular-portfolio](https://jibrankhot.github.io/angular-portfolio/)
 
-## Code scaffolding
+## 🛠️ Tech Stack
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- TypeScript
+- PrimeNG
+- SCSS
+- Animate on Scroll (AOS)
+- GitHub Pages (Hosting)
 
-## Build
+## ✨ Features
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- Responsive design across devices
+- Interactive image gallery using PrimeNG Galleria
+- Reusable Angular components
+- Scroll animations with AOS
+- Full accessibility and keyboard navigation
+- Optimized for performance and SEO
 
-## Running unit tests
+## 📷 Preview
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![Preview](https://raw.githubusercontent.com/jibrankhot/angular-portfolio/main/src/assets/images/preview.png)
 
-## Running end-to-end tests
+## 🚀 Getting Started (for Developers)
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+```bash
+git clone https://github.com/jibrankhot/angular-portfolio.git
+cd angular-portfolio
+npm install
+ng serve
