@@ -16,7 +16,7 @@
 - GitHub Pages (Hosting)
 
 ## 📷 Preview
-![Preview](assets/images/preview.png)
+![Preview](assets/images/preview.webp)
 
 ## 🚀 Getting Started (for Developers)
 
