@@ -16,7 +16,7 @@
 - GitHub Pages (Hosting)
 
 ## 📷 Preview
-![Preview](assets/images/preview.webp)
+![Preview](https://raw.githubusercontent.com/jibrankhot/angular-portfolio/main/src/assets/images/preview.png)
 
 ## 🚀 Getting Started (for Developers)
 
