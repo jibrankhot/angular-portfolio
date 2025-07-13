@@ -9,7 +9,8 @@ export class HeroComponent {
   typedStrings: string[] = [
     'Angular Developer',
     'Frontend Engineer',
-    'RxJS & State Management Enthusiast',
+    'RxJS Enthusiast',
+    'State Management Enthusiast',
     'UI/UX Focused Developer'
   ];
 }

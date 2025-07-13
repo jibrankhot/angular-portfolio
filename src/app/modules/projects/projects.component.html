@@ -3,7 +3,6 @@
 
     <div class="project-vertical-list">
         <app-project-card *ngFor="let project of projects; let i = index" [project]="project" [index]="i"
-            [aosDelay]="i * 150">
-        </app-project-card>
+            [aosDelay]="i * 150"></app-project-card>
     </div>
 </section>

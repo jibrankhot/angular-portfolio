@@ -93,4 +93,12 @@ export class ProjectCardComponent implements OnInit {
       delta > 0 ? this.nextImage() : this.prevImage();
     }
   }
+  getGithubLabel(title: string): string {
+    return `View ${title} on GitHub`;
+  }
+
+  getDemoLabel(title: string): string {
+    return `View live demo of ${title}`;
+  }
+
 }
